@@ -8,3 +8,9 @@
   margin-right: auto;
   width: 50%;
 }
+
+.slideimg {
+  display: block;
+  width: 350px !important;
+  height: 500px !important;
+}
