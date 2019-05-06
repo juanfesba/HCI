@@ -2,7 +2,7 @@ var urlAPI = "http://www.omdbapi.com/?apikey=141cc9d0&t=" //+"t=Frozen"
 
 //let var (es local a este archivo)
 
-function infoMovie(url,string,titleId,imageId,descriptionId,yearId,genreId,directorId){
+var infoMovie = function(url,string,titleId,imageId,descriptionId,yearId,genreId,directorId){
     //console.log(string)
     var request = new XMLHttpRequest();
     request.open('GET',url + string,true);
@@ -44,16 +44,24 @@ function holi(){
 	}
 }
 
-var string="interstellar"
-infoMovie(urlAPI,string,"titleMovie1","image1","None","None","None","director1")
-string="shrek"
-infoMovie(urlAPI,string,"titleMovie2","image2","None","None","None","director2")
-string="titanic"
-infoMovie(urlAPI,string,"titleMovie3","image3","None","None","None","director3")
-string="superman"
-infoMovie(urlAPI,string,"titleMovie4","image4","None","None","None","director4")
-string="inside out"
-infoMovie(urlAPI,string,"titleMovie5","image5","None","None","None","director5")
+function catalog(x){
+    var drama = ["the pianist", "game of thrones", "the godfather","breaking bad","wreck it ralph"];
+    var comedia = ["how i met your mother", "friends", "juno","harold kumar","austin powers"];
+    var accion = ["star wars", "hulk", "batman returns","superman","world war z"];
+    var catalogo=[drama,comedia,accion]
+    var i;
+    for (i = 0; i < recommendations.length; i++) { 
+        infoMovie(urlAPI,catalogo[x-1][i],"titleMovie"+(i+1).toString(),"image"+(i+1).toString(),"None","None","None","director"+(i+1).toString())
+    }
+}
+
+var recommendations = ["interstellar", "shrek", "titanic","superman","inside out"];
+var i;
+for (i = 0; i < recommendations.length; i++) { 
+    infoMovie(urlAPI,recommendations[i],"titleMovie"+(i+1).toString(),"image"+(i+1).toString(),"None","None","None","director"+(i+1).toString())
+}
 
 string="frozen"
+infoMovie(urlAPI,string,"titleMoviex","imagex","None","yearx","genrex","directorx")
+console.log("error")
 infoMovie(urlAPI,string,"titleMoviex","imagex","None","yearx","genrex","directorx")
