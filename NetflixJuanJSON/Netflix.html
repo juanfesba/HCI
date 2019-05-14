@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <script src="dataMovies.json"></script>
+    <script src="ConexionAPI.js"></script>
     <script src="BackendAPI.js"></script>
 
     
@@ -41,7 +42,18 @@
 </div>
 
 <div class="row">
-		<br>
+		<div class="col-lg-2">
+			<br>
+		</div>
+		<div class="col-lg-8">
+			<center>
+				<p id="ubicacion">Buscando ciudad:</p>
+				<p id="direccion">Buscando direccion:</p>
+			</center>
+		</div>
+		<div class="col-lg-2">
+			<br>
+		</div>
 	</div>
 
 <div class="row">
@@ -215,6 +227,9 @@
 		</div>
 	</div>
 
+</div>
+
+<div id="dyn">
 </div>
 
 <!--

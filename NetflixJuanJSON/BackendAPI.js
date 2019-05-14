@@ -1,5 +1,8 @@
 var urlAPI = "http://www.omdbapi.com/?apikey=141cc9d0&t=" //+"t=Frozen"
 
+
+//&latitude="
+
 var datos = JSON.parse(datajson);
 
 function loadCatalog(value){
@@ -21,43 +24,27 @@ function loadCatalog(value){
     //console.log(datos[0].movies)
 }
 
+
+
 //let var (es local a este archivo)
 
-var infoMovie = function(url,string,titleId,imageId,descriptionId,yearId,genreId,directorId){
-    console.log("aiuda",string)
-    var request = new XMLHttpRequest();
-    request.open('GET',url + string,true);
-    request.onload = function(){
-        var data = JSON.parse(this.response);
-        //console.log(data)
-        //console.log("#"+data.Title+"#")
-        if(data.Title=="undefined" || data.Title==null){
-            document.getElementById(titleId).innerHTML="Error"
-            document.getElementById(imageId).src="undefined.jpg"
-            document.getElementById(descriptionId).innerHTML="Puede que la internet haya fallado o no haya encontrado una pelicula con ese nombre."
-            document.getElementById(yearId).innerHTML=""
-            document.getElementById(genreId).innerHTML=""
-            document.getElementById(directorId).innerHTML=""
-        }
-        else{
-            console.log(data.Director)
-            document.getElementById(titleId).innerHTML=data.Title
-            document.getElementById(imageId).src=data.Poster
-            document.getElementById(directorId).innerHTML=data.Director
-            if(descriptionId!="None"){
-                document.getElementById(descriptionId).innerHTML=data.Plot
-            }
-            if(yearId!="None"){
-                document.getElementById(yearId).innerHTML=data.Year
-            }
-            if(genreId!="None"){
-                document.getElementById(genreId).innerHTML=data.Genre
-            }
-        }
-            
-    };
-    request.send();
-}
+//appendChild
+
+//3.369586, -76.527629
+
+navigator.geolocation.getCurrentPosition(function(position){
+    console.log(position)
+    findLocation(urlAPIlocation,"&latitude="+position.coords.latitude,"&longitude="+position.coords.longitude)
+    //if(position.coords.latitude == 3.3490770000000003 && position.coords.longitude == -76.5315404){
+    if(position.coords.latitude > 3.3489 && position.coords.latitude < 3.3491 && position.coords.longitude < -76.52 && position.coords.longitude > -76.54){
+        console.log("esta en la jave")
+    }
+    else{
+        console.log("no esta en la jave")
+    }
+})
+
+
 
 function holi(){
 	x=document.getElementById("titleInput").value
@@ -82,7 +69,6 @@ function catalog(x){
     var catalogo=[drama,comedia,accion]
     var i;
     for (i = 0; i < recommendations.length; i++) { 
-        infoMovie(urlAPI,catalogo[x-1][i],"titleMovie"+(i+1).toString(),"image"+(i+1).toString(),"None","None","None","director"+(i+1).toString())
     }
 }
 
