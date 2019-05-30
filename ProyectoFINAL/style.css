@@ -49,20 +49,5 @@
 	  	margin-top: 37px !important;\
 }
 
-@media only screen and (max-width: 1025px) {
-    .footer-img{
-      z-index: 2 !important;
-}
-
-@media only screen and (max-width: 1025px) {
-    .footer-text1{
-      z-index: 3 !important;
-}
-
-@media only screen and (max-width: 1025px) {
-    .footer-text2{
-      z-index: 3 !important;
-}
-
 
 
