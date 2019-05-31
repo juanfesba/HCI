@@ -2,9 +2,9 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<title>Alamano - Usuario</title>
 
+	<title>Alamano - Usuario</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -17,7 +17,7 @@
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	<script src="backend.js"></script>
+	<script src="backendEn.js"></script>
 
 </head>
 
@@ -40,7 +40,7 @@
   		<!-- LOGO ALAMANO -->
     	<div class="col-5">
     		<center>
-      			<a href="index.html"><img src="images/Alamano.PNG" class="img-fluid" alt="Responsive image"></a>
+      			<a href="indexEn.html"><img src="images/Alamano.PNG" class="img-fluid" alt="Responsive image"></a>
       		</center>
     	</div>
 
@@ -48,7 +48,7 @@
     	<div class="col-4">
     		<center>
     			<br>
-      			<p>Nombre: {Nombre del empleado}</p>
+      			<p>Name: {Employee's name}</p>
       		</center>
     	</div>
 
@@ -57,7 +57,7 @@
     		<center>
     			<div class="dropdown" style="margin-top:4%">
 				 	<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #3f51b5">
-				    	<i class='fas fa-language'></i>  Idioma
+				    	<i class='fas fa-language'></i>  Language
 				  	</button>
 				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 				    <a class="dropdown-item" href="usuario.html">Español</a>
@@ -102,7 +102,7 @@
 					    <div class="card-header" id="headingOne" style="background-color: #2196f3" flag="false">
 					      <h2 class="mb-0">
 					      	<center><button id="One" onclick="highlight(this.id)" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="color:black;">
-					          Certificado de Embajada
+					          Embassy certificate
 					        </button><i class="material-icons" style="right:5%;position: absolute;margin-top: 2%" data-toggle="tooltip" data-placement="top" title="Con este documento puedes mostrarle a la embajada que OLSoftware certifica: que durante las fechas determinadas realizas un viaje según el motivo que hayas especificado.">&#xe88f;</i></center>
 					      </h2>
 					    </div>
@@ -113,24 +113,24 @@
 					        	<div class="form-row">
 						      		<div class="col-md-2">
 						      			<div class="form-group">
-										  <label style="margin-top: 7%;">Embajada:</label>
+										  <label style="margin-top: 7%;">Embassy:</label>
 										</div>
 									</div>
 									<div class="col-md-4">
 										<div class="form-group">
-										    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escriba aquí...">
+										    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here...">
 										</div>
 						      		</div>
 						      		<div class="col-md-2">
 						      			<div class="form-group">
-										  <label style="margin-top: 7%;">Razón:</label>
+										  <label style="margin-top: 7%;">Reason:</label>
 										</div>
 									</div>
 									<div class="col-md-4">
 						      			<div class="form-group">
 										  	<select class="form-control">
-											  <option>Vacaciones</option>
-											  <option>Capacitación</option>
+											  <option>Holidays</option>
+											  <option>Trainings</option>
 											</select>
 										</div>
 									</div>
@@ -139,7 +139,7 @@
 						      	<div class="form-row">
 						      		<div class="col-md-2">
 						      			<div class="form-group">
-										  <label style="margin-top: 7%;">Fecha Inicio:</label>
+										  <label style="margin-top: 7%;">Start date:</label>
 										</div>
 									</div>
 									<div class="col-md-4">
@@ -149,7 +149,7 @@
 									</div>
 						      		<div class="col-md-2">
 						      			<div class="form-group">
-										  <label style="margin-top: 7%;">Fecha Final:</label>
+										  <label style="margin-top: 7%;">Final date:</label>
 										</div>
 									</div>
 									<div class="col-md-4">
@@ -171,7 +171,7 @@
 					    <div class="card-header" id="headingTwo" style="background-color: #2196f3" flag="false">
 					      <h2 class="mb-0">
 					      	<center><button id="Two" onclick="highlight(this.id)" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:black">
-					          Comprobante de Pago
+					          Proof of payment
 					        </button>
 					        <i class="material-icons" style="right:5%;position: absolute;margin-top: 2%" data-toggle="tooltip" data-placement="top" title="Con este documento puedes mostrar que OLSoftware certifica: que durante el mes en el año que especificaste recibiste los pagos correspondientes.">&#xe88f;</i></center>
 					      </h2>
@@ -184,21 +184,21 @@
 						      		<div class="col-md-2">
 						        	</div>
 						        	<div class="col-md-4">
-						        		<p style="margin-top: 4%;">Especifica mes:</p>
+						        		<p style="margin-top: 4%;">Month:</p>
 						        	</div>
 									<select class="form-control col-md-4" style="width:30%">
-									  <option>Enero</option>
-									  <option>Febrero</option>
-									  <option>Marzo</option>
-									  <option>Abril</option>
-									  <option>Mayo</option>
-									  <option>Junio</option>
-									  <option>Julio</option>
-									  <option>Agosto</option>
-									  <option>Septiembre</option>
-									  <option>Octubre</option>
-									  <option>Noviembre</option>
-									  <option>Diciembre</option>
+									  <option>January</option>
+									  <option>February</option>
+									  <option>March</option>
+									  <option>April</option>
+									  <option>May</option>
+									  <option>June</option>
+									  <option>July</option>
+									  <option>August</option>
+									  <option>September</option>
+									  <option>October</option>
+									  <option>November</option>
+									  <option>December</option>
 									</select>
 									<div class="col-md-2">
 						        	</div>
@@ -208,7 +208,7 @@
 						      		<div class="col-md-2">
 						        	</div>
 						        	<div class="col-md-4">
-						        		<p style="margin-top: 4%;">Especifica año:</p>
+						        		<p style="margin-top: 4%;">Specify the year:</p>
 						        	</div>
 									<select class="form-control col-md-4" style="width:30%">
 									  <option>2010</option>
@@ -236,7 +236,7 @@
 					    <div class="card-header" id="headingThree" style="background-color: #2196f3" flag="false">
 					      <h2 class="mb-0">
 					      	<center><button id="Three" onclick="highlight(this.id)" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:black">
-					          Certificado Laboral
+										Work certificate
 					        </button><i class="material-icons" style="right:5%;position: absolute;margin-top: 2%" data-toggle="tooltip" data-placement="top" title="Con este documento puedes mostrar que OLSoftware certifica: que efectivamente eres un empleado oficial de la empresa. Opcional: Puedes indicar si quieres que tu salario se muestre en el documento.">&#xe88f;</i></center>
 					        
 					      </h2>
@@ -245,7 +245,7 @@
 					      <div class="card-body">
 					        <div class="checkbox">
 					          <center>
-					          	<label><input type="checkbox" value=""> Mostrar salario.</label>
+					          	<label><input type="checkbox" value=""> Show salary.</label>
 					          </center>
 							  
 							</div>
@@ -258,7 +258,7 @@
 					    <div class="card-header" id="headingFour" style="background-color: #2196f3" flag="false">
 					      <h2 class="mb-0">
 					      	<center><button id="Four" onclick="highlight(this.id)" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color:black">
-					          Ingresos y Retenciones
+					          Income and Withholdings
 					        </button><i class="material-icons" style="right:5%;position: absolute;margin-top: 2%" data-toggle="tooltip" data-placement="top" title="Con este documento puedes mostrar que OLSoftware certifica: que durante el año especificado tuviste los ingresos y retenciones que se indiquen en el documento.">&#xe88f;</i></center>
 					        
 					      </h2>
@@ -271,7 +271,7 @@
 						      		<div class="col-md-2">
 						        	</div>
 						        	<div class="col-md-4">
-						        		<p style="margin-top: 4%;">Especifica año:</p>
+						        		<p style="margin-top: 4%;">Year:</p>
 						        	</div>
 									<select class="form-control col-md-4" style="width:30%">
 									  <option>2010</option>
@@ -313,12 +313,12 @@
 			  			<div class="row">
 			  				<div class="col-sm">
 					  			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-								 	Zoom Imagen
+								 	Image Zoom 
 								</button>
 							</div>
 							<div class="col-sm">
 					  			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#downloadModal" onclick="checkDownload()">
-								 	<i class='fas fa-download'></i>  Descargar
+								 	<i class='fas fa-download'></i>  Download
 								</button>
 							</div>
 							<div class="col-sm">
@@ -335,7 +335,7 @@
 					  <div class="modal-dialog" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="exampleModalLabel">Previsualización del Documento</h5>
+					        <h5 class="modal-title" id="exampleModalLabel">Preview of the document</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
@@ -347,7 +347,7 @@
 					      	</center>
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+					        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
 					      </div>
 					    </div>
 					  </div>
@@ -358,7 +358,7 @@
 					  <div class="modal-dialog" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="downloadModalLabel">Info Descarga</h5>
+					        <h5 class="modal-title" id="downloadModalLabel">Download report</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
@@ -370,7 +370,7 @@
 					      	</center>
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+					        <button type="button" class="btn btn-primary" data-dismiss="modal">Accept</button>
 					      </div>
 					    </div>
 					  </div>
@@ -381,7 +381,7 @@
 					  <div class="modal-dialog" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="emailModalLabel">Previsualización del Documento</h5>
+					        <h5 class="modal-title" id="emailModalLabel">Preview of the document</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
@@ -393,7 +393,7 @@
 					      	</center>
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+					        <button type="button" class="btn btn-primary" data-dismiss="modal">Accept</button>
 					      </div>
 					    </div>
 					  </div>
